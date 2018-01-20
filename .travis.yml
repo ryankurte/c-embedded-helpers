@@ -7,7 +7,6 @@ addons:
 compiler:
 - clang
 script:
-- mkdir -p build && cd build && cmake .. && make
-- ./build/cem-test
+- mkdir -p build && cd build && cmake .. && make && ./cem-test
 notifications:
   email: false
