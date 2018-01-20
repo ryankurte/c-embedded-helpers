@@ -1,0 +1,14 @@
+language: c
+addons:
+  apt:
+    packages:
+    - cmake
+    - make
+compiler:
+- clang
+install:
+- mkdir -p build && cd build && cmake .. && make
+script:
+- ./build/cem-test
+notifications:
+  email: false
