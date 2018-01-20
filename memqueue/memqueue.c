@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int mem_queue_init(mem_queue_t *queue,size_t entry_size, uint8_t* data, size_t data_len) {
+int mem_queue_init(mem_queue_t *queue, size_t entry_size, uint8_t* data, size_t data_len) {
     queue->tail = 0;
     queue->head = 0;
 
